@@ -1,1 +1,59 @@
-<h1>Ahmed Birthday Website</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love ❤️</title>
+
+<link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+<div class="screen active" id="screen1">
+
+    <div class="lock-box">
+
+        <h1>❤️ A Private Message ❤️</h1>
+
+        <p>
+            This surprise was made only for you...
+        </p>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter Secret Code">
+
+        <button onclick="checkPassword()">
+            Unlock ❤️
+        </button>
+
+        <p id="error"></p>
+
+    </div>
+
+</div>
+
+<div class="screen" id="screen2">
+
+    <div class="heart-container">
+
+        <div class="heart"></div>
+
+        <h1>
+            Happy Birthday My Love ❤️
+        </h1>
+
+        <button onclick="nextScreen(3)">
+            Continue ❤️
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
