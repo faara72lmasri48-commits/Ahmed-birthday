@@ -1,0 +1,119 @@
+body{
+  margin:0;
+  background:#050505;
+  color:white;
+  font-family:Georgia, serif;
+  overflow:hidden;
+}
+
+.screen{
+  display:none;
+  width:100vw;
+  height:100vh;
+}
+
+.screen.active{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#screen1{
+  background:
+    radial-gradient(circle at top, rgba(255,0,80,.25), transparent 30%),
+    linear-gradient(135deg,#050505,#180008,#000);
+}
+
+.lock-box{
+  width:85%;
+  max-width:420px;
+  padding:40px;
+  text-align:center;
+  border-radius:30px;
+  border:1px solid #d8a84f;
+  background:rgba(0,0,0,.65);
+  box-shadow:0 0 50px rgba(255,215,0,.25);
+}
+
+.lock-box h1{
+  color:#ffd36a;
+  font-size:34px;
+  text-shadow:0 0 20px #ff4d73;
+}
+
+.lock-box p{
+  color:#f1d7a3;
+  font-size:18px;
+}
+
+input{
+  width:90%;
+  padding:15px;
+  margin:20px 0;
+  border-radius:12px;
+  border:1px solid #d8a84f;
+  background:#050505;
+  color:white;
+  text-align:center;
+}
+
+button{
+  padding:14px 35px;
+  border-radius:30px;
+  border:1px solid #d8a84f;
+  background:linear-gradient(135deg,#090909,#3a2406);
+  color:#ffe0a3;
+  font-size:16px;
+  cursor:pointer;
+  box-shadow:0 0 25px rgba(255,215,0,.25);
+}
+
+#screen2{
+  background:
+    radial-gradient(circle at center, rgba(255,0,80,.25), transparent 35%),
+    linear-gradient(#050505,#120005);
+  text-align:center;
+}
+
+.heart-container h1{
+  color:#ffd36a;
+  font-size:42px;
+  text-shadow:0 0 25px #ff4d73;
+}
+
+.heart{
+  width:130px;
+  height:130px;
+  background:#ff2f5f;
+  transform:rotate(45deg);
+  margin:0 auto 60px;
+  box-shadow:0 0 25px #ff2f5f, 0 0 60px #ff2f5f;
+  animation:pulse 1.4s infinite;
+}
+
+.heart::before,
+.heart::after{
+  content:"";
+  width:130px;
+  height:130px;
+  background:#ff2f5f;
+  border-radius:50%;
+  position:absolute;
+}
+
+.heart::before{
+  left:-65px;
+}
+
+.heart::after{
+  top:-65px;
+}
+
+#error{
+  color:#ff4d73;
+}
+
+@keyframes pulse{
+  0%,100%{transform:rotate(45deg) scale(1);}
+  50%{transform:rotate(45deg) scale(1.12);}
+}
